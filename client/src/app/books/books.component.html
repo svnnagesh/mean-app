@@ -1,0 +1,15 @@
+<hr>
+<div class="container">
+    <h3 class="text-center">Get data using Observable methods : </h3>
+    <div class="row form-group" *ngFor="let contact of contacts">
+        <div class="col-sm-3">
+            <div class="bg-primary pad10">{{contact.first_name}}</div>
+        </div>
+        <div class="col-sm-3">
+            <div class="bg-success pad10">{{contact.last_name}}</div>
+        </div>
+        <div class="col-sm-3">
+            <div class="bg-info pad10">{{contact.phone}}</div>
+        </div>
+    </div>
+</div>

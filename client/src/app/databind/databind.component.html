@@ -1,0 +1,15 @@
+<hr>
+<div class="container">
+    <h2 class="page-header">4 Ways of data binding</h2>
+    <ul>
+        <li>Interpolation Binding</li>
+        <li>Two-Way Binding</li>
+        <li>Property Binding</li>
+        <li>Event Binding</li>
+    </ul>
+    <h5>Interpolation: {{user.fname | short:3}} {{user.lname | short:5}}</h5>
+    <h5>Property Binding <button [disabled]="status" (click)="eventBind()" class="btn btn-primary btn-sm">Click</button></h5>
+    <h5 *ngIf="eventBindElement">Event Binding</h5>
+    <h5>Two-Way Binding <input type="text" [(ngModel)]="bindData" /> {{bindData}}</h5>
+
+</div>
